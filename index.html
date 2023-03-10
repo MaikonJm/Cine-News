@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="_css/pagHome.css" />
+    <link rel="icon" href="_imagens/favicon.png" type="imagem/gif">
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="_javascript/jquery-3.3.1.min.js"></script>
+    <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+    <script>
+        //atribui um valor como id da pagina
+        check = 1;
+        //função  carregando a pagina  
+        window.setInterval(function() {
+            $("#interface").fadeTo(2000, 1);
+            $("#loading").fadeTo(3000, 0);
+            $("#loading").css("display", "none");
+            if (back == 1) { //verifica para nao remover fundo preto
+                $("body").css("background-image", "url('_imagens/back3.jpg')");
+                back++;
+            }
+        }, 8000);
+    </script>
+    <script language="JavaScript" src="_javascript/funcoes.js"></script>
+</head>
+
+<body style="background-image: url(_imagens/back3-black.jpg)">
+    <script>
+        var back = 1; //atribui valor para condição linha 32
+    </script>
+
+    <img class="img-fluid" id="loading" src="_imagens/cinema-loading.gif">
+
+    <div class="container-fluid">
+        <div id="corpo" class="row inicio">
+
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <!-- opacidade 0 apenas na index -->
+            <div id="interface" style="opacity: 0;" class="col-12 col-md-8 col-lg-8">
+
+                <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                    <img class="img-fluid" style="padding-right: 2%;" src="_imagens/btn.png" id="turn-on2">
+
+                    <div style="background-color: white;" class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                            <img class="img-fluid top" id="logoHome" src="_imagens/logo1.png" alt="Logo Home" />
+
+                            <li><a class="nav-item" href="_otherPages/emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logo1')" />Em cartaz</li>
+                            <li><a href="_otherPages/series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logo1')" />Séries</li>
+                            <li><a href="_otherPages/emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logo1')" />Em breve</li>
+                            <li><a href="_otherPages/recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logo1')" />Recomendados</li>
+                            <li><a href="_otherPages/noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logo1')" />Notícias</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+
+
+                <section id="noticia3d">
+
+
+
+                    <h1 style="font-size: 200%;"><strong>Bem vindo ao CineNews!</strong><br>
+                        <h1 class="h3">Só aqui você encontra tudo sobre cinema...</h1>
+                    </h1>
+
+                    <h2></h2>
+                    <hr class="division">
+                    <p>A indústria cinematográfica atual é um mercado exigente e promissor para diferentes áreas do saber. Não são apenas os atores e atrizes que brilham nas cenas que são apresentadas a um público local e internacional, pois a realização de um filme precisa englobar uma equipe de trabalho. Na construção e realização de um filme existem os seguintes profissionais: o “roteirista” que escreve a história e as narrativas dos personagens, ou melhor, os diálogos; o “diretor” que tem a função de coordenar, direta e indiretamente, o trabalho de todas as pessoas envolvidas com o filme, da concepção à finalização; o “diretor de fotografia”, um profissional de artes visuais com sensibilidade e competência para decidir como iluminar uma cena, que lentes serão melhores para determinados ângulos, o tipo de filme a ser rodado, entre outras atribuições; há quem seja responsável pela trilha sonora do filme, que é o “compositor musical”, ele é quem fica responsável por contribuir para o clima pretendido pelo diretor; O “produtor” é a pessoa ou grupo de pessoas que se encarrega de viabilizar a realização do filme, buscando patrocínios e parcerias, e ainda, tratando da parte burocrática que envolve toda a equipe.</p>
+                    <figure>
+                        <img class="img-fluid" src="_imagens/noticias_05.jpg" alt="Efeitos Especiais" />
+                    </figure>
+                    <br/>
+                    <p>Há também uma equipe de técnicos/especialistas que são fundamentais junto aos profissionais já apresentados, que são: o “técnico de efeitos especiais” cuja tarefa é realizar efeitos visuais e sonoros às cenas já filmadas, inclusive utilizando inserção de efeitos posteriores por computador; o “técnico de som”, que cuida dos diferentes microfones durante as gravações, cuidando para que só haja a captação do que se julgue essencial; o “operador de câmera” que fica responsável por focar os ângulos solicitados pelo diretor; e os “editores” ou “montadores”, que trabalham numa ilha de edição, juntos com o diretor ou orientados por um mapa organizado pelo próprio diretor, onde se encontra organizados as cenas, os sons, a trilha sonora, entre outros parâmetros qualitativos e quantitativos de finalização do filme. Outros profissionais como coreógrafos, figurinistas, e maquiadores são essenciais em determinadas produções.</p>
+
+
+                    <small>Leia a matéria completa em : 
+                <a href="https://www.infoescola.com/cinema/historia-do-cinema/">infoescola.com</a></small>
+                </section>
+                <hr class="division">
+
+                <section id="noticia3d">
+                    <h2>Como funciona um filme em 3D ?</h2>
+
+                    <p>Desde que foi criado, o cinema evoluiu muito, ganhando som, cores e efeitos especiais.
+                        <br>Uma forma de interação com o espectador são os filmes em 3D, os quais precisam de óculos especiais, a grande maioria já assistiu um filme com esse efeito, mas muita gente não sabe como ele realmente funciona...</p>
+                    <figure class="foto-um">
+                        <img class="img-fluid" src="_imagens/img01.jpg" alt="pessoas cinema" />
+                        <figcaption> - Tecnologia 3D cada vez mais realista -</figcaption>
+                    </figure>
+                    <br/>
+                    <p>Nos filmes em 3D, os cenários, as pessoas e até mesmo os personagens de desenho podem ser visualizados <b>tridimensionalmente</b>, como se fossem reais e estivessem mais próximos de nós. Assim, a ideia dos produtores destes é "<u>enganar</u>" nosso cérebro e nossos olhos, fazendo-os pensar que estão diante de um espaço tridimensional e não à frente de uma tela bidimensional comum.
+
+                        <br>Para entendermos o funcionamento dos cinemas 3D, é fundamental que saibamos que os seres humanos possuem visão binocular, de modo que cada olho enxerga uma imagem diferente, sendo o cérebro o responsável por combiná-las em uma única imagem. A diferença angular (quase imperceptível) entre estas duas imagens, denominada desvio, é utilizada pelo cérebro para ajudar na percepção de profundidade. É exatamente por esta razão que, ao perder a visão de um dos olhos, as pessoas perdem também a noção espacial. As antigas produções de filmes 3D utilizavam imagens anáglifas para aproveitarem a visão binocular e o desvio, estas imagens incluem duas camadas de cor numa única tira do filme reproduzida por um projetor, sendo uma das camadas vermelha e a outra azul (ou verde).
+
+                        <br>Assim, quando desejávamos assistir a estes filmes, fazia-se necessáro utilizarmos um óculos 3D com uma lente vermelha e a outra azul (ou verde), como os da figura do topo desta página. Estas lentes "obrigavam" um olho a enxergar a seção vermelha da imagem e a outra, a seção azul (ou verde). &nbsp;É devido às diferenças entre as duas lentes que o cérebro as interpreta como uma imagem de três dimensões. Entretanto, por conta da utilização de lentes coloridas, a coloração da "imagem final" não é precisa, de modo que há dados que relatam que esta tecnologia trouxe muitos problemas para as pessoas como dores de cabeça, lesões oculares e náusea. Por essa razão, outra técnica passou a ser mais utilizada, que é o modo polarizado. Embora seja mais caro e complexo, é mais fiel e mantém as cores originais. Cada imagem é projetada com uma polaridade diferente (às vezes com dois projetores simultâneos). Nessa técnica, também são necessários óculos com lentes especiais para a visualização. Cada lente dos óculos possui filtro de polarização diferente: uma lente filtra as ondas polarizadas na vertical e a outra na horizontal. Como a lente polarizada escurece um pouco as imagens, a tela para projeção é prateada, a fim de aumentar o brilho da imagem.<br>
+
+
+                        <small>Noticia adptada de - 
+                <a href="http://www.sofisica.com.br/conteudos/curiosidades/cinema_3d.php">Sofisica.com.br</a></small>
+                </section>
+                <hr class="division">
+
+
+                <section id="NoticiaLocadora">
+                    <h1 style="font-size: 200%;"><b>Última grande locadora de filmes de Bauru fecha as portas:</b><br><br></h1>
+                    <h2 style="padding-top: 0;"><i>'Resistimos o quanto pudemos', diz dona</i></h2>
+                    <h3>Rede que já teve uma dezena de lojas na cidade faz ‘feirão’ para vender todo o acervo antes de encerrar atividades. <br><b>Pirataria, internet e TV paga</b> acabaram com o hábito de alugar filmes, segundo proprietária.</h3>
+                    <figure class="foto-dois">
+                        <img class="img-fluid" src="_imagens/noticiaLocadora.jpg" alt="A empresária Cristina Shibukawa inaugurou a rede de locadoras há 25 anos" title="A empresária Cristina Shibukawa inaugurou a rede de locadoras há 25 anos: pirataria, TV a cabo e internet minaram o hábito de se alugar filmes">
+                        <figcaption>A empresária Cristina Shibukawa inaugurou a rede de locadoras há 25 anos: pirataria, TV a cabo e internet minaram o hábito de se alugar filmes (Foto: Sérgio Pais/G1)</figcaption>
+
+                    </figure>
+                    <p>Alguns comerciantes gostariam que o tempo pudesse ser rebobinado igual às famosas fitas de VHS. Pelo menos esse é o sentimento daqueles que investiram tudo em locadoras de filmes.<br> Entre eles está a empresária Cristina Shibukawa, de 48 anos, que resistiu enquanto pôde para manter a loja, mas que agora optou pelo fechamento. Antes do apagar as luzes, ver subir na tela o "The End" e fechar a última caixa de DVD, ela e o marido, proprietários da única grande locadora de filmes que ainda tentava sobreviver em Bauru (SP), farão um “feirão” de DVDs neste sábado (27) para dar fim ao estoque. Mais que uma oportunidade para comprar um filme marcante, o evento será também uma espécie de fechamento de um ciclo histórico no hábito das famílias em alugar filmes.
+
+                        <br>A Vídeo Express, considerada a última grande locadora de filmes de Bauru, é mais uma a sucumbir a um “pacote” de circunstâncias que minaram esse tipo de negócio. Em entrevista ao G1, Cristina conta que há 25 anos administra a locadora ao lado do marido. Os sinais de que a vida do negócio não seria tranquila começaram no início dos anos 2000 com o crescimento da pirataria. Além dos DVDs piratas vendidos aos montes em bancas espalhadas pela cidade, também contribuíram para as dificuldades do setor as mudanças tecnológicas que chegaram no embalo da popularização da TV a cabo e da internet, com os chamados serviços de streaming, como a Netflix.</p>
+
+                    <hr class="division">
+
+                    <h3><b>“Começou com a pirataria, até fizemos um ‘panelaço’ em 2003 como protesto, mas depois veio TV a cabo e a internet, com muita gente baixando filmes. E nosso público foi caindo, caindo... Resistimos o quando pudemos, mas não dá mais”, lamenta a empresária.</b></h3>
+
+                    <p>Antes das mudanças tecnológicas e de hábito dos consumidores, Cristina e Márcio Shibukawa chegaram a ter dez lojas para locação de filmes espalhadas pela cidade em bairros como Mary Dota, Jardim Progresso, Vista Alegre, Altos da Cidade e Jardim América. Com o enfraquecimento do ramo, elas foram sendo fechadas uma a uma, juntamente com o fim de outras grandes locadoras, como a de uma grande rede, localizada em área nobre da cidade, na Avenida Getúlio Vargas, que fechou as portas no ano passado.</p>
+
+                    <figure class="foto-tres">
+                        <img class="img-fluid" src="_imagens/noticiaLocadora2.jpg" alt="Locadora de dvds com as portas fechadas" title="Até mesmo algumas pequenas locadoras de bairros estão vendendo seus acervos" />
+                        <figcaption>Até mesmo algumas pequenas locadoras de bairros estão vendendo seus acervos (Foto: Sérgio Pais/G1)</figcaption>
+                    </figure>
+
+                    <p>Tristeza semelhante é compartilhada por Miriam Cristina de Souza, de 38 anos, oito deles passados atrás do balcão da locadora. Ela avalia que a pirataria e os “gatos” (ligações clandestinas) de TV a cabo ajudaram a derrubar o negócio de locação de filmes. “A tristeza é grande com o fim das locadoras, fiz muitas amizades aqui. Sempre indiquei filmes e já até sabia os gostos de cada um. No fim das contas, alguns clientes vinham até mesmo pra desabafar sobre a vida. Vou sentir muita saudade”, diz a balconista. A professora Simone Fernandes Gomes dos Santos, de 41 anos, é cliente da locadora há pelo menos 16 anos e ainda não sabe o que fará a partir de agora. Ela admite ser uma espécie de “sobrevivente” por manter vivo o hábito de alugar filmes até hoje.</p>
+
+                    <aside>
+                        <h3>Quando falo a amigos que ainda frequento locadoras, eles acham estranho. Assisto na internet, vou ao cinema, mas mesmo assim gosto de locadora, um local onde posso acessar rapidamente filmes que perco nos cinemas. Isso aqui faz parte da vida da minha família, um local que venho com meu filho desde pequenino e hoje ele já está com 10 anos. Estou muito triste.<br> -diz uma moradora local.</h3>
+                    </aside>
+
+                    <figure style="margin-bottom: 8%;" class="foto-quatro">
+                        <img class="img-fluid" src="_imagens/noticiaLocadora3.jpg" alt="Locadora em Holambra" title="Locadora de Dvds, um comércio muito comum que hoje já entra em estinção." />
+                        <figcaption>Locadora em Holambra -SP (Foto: Maria Elisa Moraes - Site JC Holambra)</figcaption>
+                        <small>Noticia adptada de - <a href="https://g1.globo.com/sp/bauru-marilia/noticia/ultima-grande-locadora-de-filmes-de-bauru-fecha-as-portas-resistimos-o-quanto-pudemos-diz-dona.ghtml">g1.com.br</a></small>
+                    </figure>
+                </section>
+
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#" />&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+
+    </div>
+    <!------>
+    <!-- javascript -->
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+
+</body>
+
+</html>
