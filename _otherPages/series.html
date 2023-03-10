@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - Séries</title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/series.css" />
+
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_css/style.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+
+    <script>
+        //atribui um valor como id da pagina
+        check = 3;
+    </script>
+    
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+
+</head>
+
+<body style="background-image: url('../_imagens/back3.jpg');">
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+
+            <!-- div centralizar conteudo -->
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <!-- div centralizar conteudo -->
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+
+                <!-- menu de navegação -->
+
+                <nav id="barra-navegacao"  align="center" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                   <img style="padding-right: 2%" src="../_imagens/btn.png" id="turn-on">
+                    <div style="background-color: white;" class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <img class="img-fluid top" id="logoSeries" src="../_imagens/logoSeries.png" alt="logo Séries" />
+
+                            <li><a href="../index.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoEmCartaz')" />Home</li>
+                            <li><a href="emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logoSeries')" />Em cartaz</li>
+                            <li><a href="emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logoSeries')" />Em breve</li>
+                            <li><a href="recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logoSeries')" />Recomendados</li>
+                            <li><a href="noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logoSeries')" />Notícias</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h1 style="text-align: center"><i class="fas fa-tv fa-1x"></i> Séries para curtir em casa </h1>
+
+                <!-- container cards-->
+                <div class="content"></div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="../_imagens/cover_got.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Game of Thrones</h5>
+                            <p class="card-text">Game of Thrones é uma série de televisão norte-americana criada por David Benioff e D. B. Weiss, e baseada na série de livros A Song of Ice and Fire, de George R. R. Martin.<a href="game_of_thrones.html"><small>&nbsp; leia mais...</small></a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../_imagens/cover_bb.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Breaking Bad</h5>
+                            <p class="card-text">Breaking Bad foi uma premiada série de televisão norte-americana criada e produzida por Vince Gilligan que retrata a vida do químico Walter White, um homem brilhante frustrado em dar ...<a href="breaking_bad.html"><small>&nbsp; leia mais...</small></a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../_imagens/cover_twd.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">The Walking Dead</h5>
+                            <p class="card-text">The Walking Dead é uma série de televisão dramática e pós-apocalíptica norte-americana, desenvolvida por Frank Darabont e baseada na série em quadrinhos<a href="the_walking_dead.html"><small>&nbsp; leia mais...</small></a></p>
+                 
+          
+                        </div>
+                    </div>
+                </div>
+
+                <!-- container cards-->
+                <div class="content"></div>
+
+                <div class="card-deck">
+                    <div class="card" style="margin-bottom: 10%;">
+                        <img class="card-img-top" src="../_imagens/cover_sn.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Narcos</h5>
+                            <p class="card-text">Narcos é a história real dos esforços dos Estados Unidos e Colômbia para combater o temido traficante Pablo Escobar (interpretado pelo ator Wagner Moura, de Tropa de Elite) e o cartel de Medellín, uma das organizações criminosas mais ricas e impiedosas da história.<a href="narcos.html"><small>&nbsp; leia mais...</small></a></p>
+                            <p class="card-text"><i class="far fa-calendar-alt">&nbsp;&nbsp;2015 - 2018</i></p>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 10%;">
+                        <img class="card-img-top" src="../_imagens/cover_ga.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor Who</h5>
+                            <p class="card-text">Doctor Who teve sua versão original entre 1963 e 1989 e está de volta à TV desde 2005. A série britânica gira em torno de um viajante do tempo e do espaço conhecido apenas como “Doctor” (Doutor)<a href="doctor_who.html"><small>&nbsp; leia mais...</small></a></p>
+                            <p class="card-text"><i class="far fa-calendar-alt">&nbsp;&nbsp;2011 - 2018</i></p>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 10%;">
+                        <img class="card-img-top" src="../_imagens/cover_lp.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">La Casa de Papel</h5>
+                            <p class="card-text">La Casa de Papel é uma série de televisão espanhola do gênero de filmes de assalto. Criada por Álex Pina para as redes televisão espanhola Antena 3, a série estreou em 2 de maio de 2017 estrelando ...<a href="la_casa_papel.html"><small>&nbsp; leia mais...</small></a></p>
+                            <p class="card-text"><i class="far fa-calendar-alt">&nbsp;&nbsp;2017 - 2019</i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#"/>&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+            <!-- div centralizar conteudo -->
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+    <!------>
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
+</body>
+
+</html>

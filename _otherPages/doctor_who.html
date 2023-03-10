@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - Séries </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/series.css" />
+    <script>
+        function mudaPersonagem() {
+            var x = 1;
+            
+            var myVar = setInterval(function() {
+                if (x <= 4) {
+                    $(".dc1").attr("src", "../_imagens/PerDW1-" + x + ".jpg");
+                    x++;
+                }else if (x > 4){
+                    x = x - 4;
+                }
+            }, 1500);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            mudaPersonagem();
+        }
+        
+        
+    </script>
+
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_css/style.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+                <h1 class="cabecalho" style="font-family: doctor; font-size: 600%">Doctor Who</h1>
+
+                <audio audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
+                    <source src="../_audio/Doctor%20Who%20Theme%201.mp3" type="audio/mp3" />
+                        seu navegador não suporta HTML5
+                </audio>
+
+                <img id="off" style="float: left;" src="../_imagens/icon_sound.png">
+
+                <img class="img-fluid" src="../_imagens/banner_doctorwho.jpg" alt="Doctor Who">
+                <div class="series">
+
+                    <p>O Doutor é um Senhor do Tempo - um alien de um planeta distante chamado Gallifrey que tem dois corações e aproximadamente 900 anos. Em sua nave espacial, a TARDIS, ele atravessa as barreiras do espaço e do tempo lutando contra inimigos e criando aventuras com seus companheiros, que sempre escolhe para viajar junto a ele. Quando ele está prestes a morrer, ele se regenera e renasce em outro corpo inteiramente novo.</p>
+                    <small>Noticia adptada de - <a href="http://www.adorocinema.com" target="_blank">adorocinema.com</a></small>
+                </div>
+
+                <!-- tabela -->
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table id="tabela" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="table-dark"><i class="fas fa-couch"></i>&nbsp;&nbsp;&nbsp;Temporadas</td>
+                                    <td class="table-dark"><i class="far fa-star"></i>&nbsp;&nbsp;&nbsp;Nota</td>
+                                    <td class="table-dark"><i class="fas fa-th-list"></i>&nbsp;&nbsp;&nbsp;Gênero</td>
+                                    <td class="table-dark"><i class="far fa-play-circle"></i>&nbsp;&nbsp;&nbsp;Episódios</td>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>11</td>
+                                    <td>8.7</td>
+                                    <td>Aventura/Drama/Familia</td>
+                                    <td>177</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <hr class="linha">
+
+                <!-- personagens -->
+
+
+                <h1 class="titulo-per" style="font-family: doctor; font-size: 440%">Principais Personagens</h1>
+
+
+
+                <hr class="linha">
+
+                <!-- bloco de cada personagem-->
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" class="dc1" src="../_imagens/PerDW1-1.jpg" alt="The Doctor">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span onclick="stop()">The Doctor</span> Ele é um alienígena viajante do tempo do planeta Gallifrey, terra natal dos Senhores do Tempo. Quando está serialmente machucado, pode se regenerar, alterando também sua aparência física e características psico-mentais, podendo perder algumas memorias no processo. Ele viaja na TARDIS (Time And Relative Dimension In Space), uma máquina viva que viaja instantaneamente para qualquer lugar no tempo ou espaço e ainda em dimensões podendo se materializar em qualquer local inclusive em ambientes totalmente fechados. A TARDIS pode aparentar em qualquer forma externa, mas devido a um defeito ficou com a forma de uma cabine policial azul inglesa da década de 60, como o próprio Doutor gostou da sua aparência o manteve. Geralmente parte em acompanhantes de uma ou dois pessoas, podendo viajar com mais pessoas. <a href="https://pt.wikipedia.org/wiki/Doutor_(Doctor_Who)" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Christopher_Eccleston" target="_blank">Christopher Eccleston,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/David_Tennant" target="_blank">David Tennant,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Matt_Smith" target="_blank">Math Smith,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Peter_Capaldi" target="_blank"><br>Peter Capaldi</a>
+                                <br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=UAYeW-TMCMPEwATmpKuADA&q=Russell+T.+Davies&oq=Russell+T.+Davies&gs_l=psy-ab.12...0.0.0.65883.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0._c99lMHXDBk" class="actor" target="_blank">Russell T. Davies</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerDW2.jpg" alt="Amy Pond">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Amy Pond</span> nasceu na Escócia e foi levada para a Inglaterra onde foi criada por uma tia, quando seus pais morreram. O seu quarto apresentava uma rachadura estranha em sua parede onde ela ouvia vozes através dela, e a pequena Amelia amedrontada rezou para que o Papai Noel lhe mandasse um policial para investigar o problema. neste momento, uma Cabine Policial caiu em seu quintal, revelando em seu interior,não um policial, mas sim um excêntrico “homem maltrapilho” que ainda se ajustava ao seu novo corpo: O Décimo Primeiro Doutor <a href="https://pt.wikipedia.org/wiki/Amy_Pond" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?biw=1920&bih=925&ei=aggeW6DsKYqrwATanZjQCQ&q=Karen+Gillan&oq=Karen+Gillan&gs_l=psy-ab.12...0.0.0.5636.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.eKafUC6WRFQ" target="_blank">Karen Gillan</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=UAYeW-TMCMPEwATmpKuADA&q=Russell+T.+Davies&oq=Russell+T.+Davies&gs_l=psy-ab.12...0.0.0.65883.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0._c99lMHXDBk" class="actor" target="_blank">Russell T. Davies</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerDW3.jpg" alt="tyrion lannister" alt="Rory Williams">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Rory Williams</span> é compassivo, curioso e capaz de grande bravura e resistência. Ele ama Amy, mas o Doutor muitas vezes o incomoda. Ele teme que Amy esteja com ele apenas porque ele a lembra do Senhor do Tempo. Um pouco. Seguir os dois em suas viagens já o deixou em sérios apuros, mas ele enfrentou alienígenas terríveis com coragem e sempre defendeu sua esposa, não importando quais monstros ou loucos a ameaçassem. <a href="https://pt.wikipedia.org/wiki/Rory_Williams" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?sa=X&q=Arthur+Darvill&stick=H4sIAAAAAAAAAOPgE-LSz9U3SMrNKjdLUQKzLdNzC6sMtEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqARq3FqFQAAAA&ved=0ahUKEwiZz5u18crbAhUDj5AKHRfQA3kQmxMItgEoATAU&biw=1920&bih=925" target="_blank">Arthur Darvill</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=UAYeW-TMCMPEwATmpKuADA&q=Russell+T.+Davies&oq=Russell+T.+Davies&gs_l=psy-ab.12...0.0.0.65883.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0._c99lMHXDBk" class="actor" target="_blank">Russell T. Davies</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerDW4.jpg" alt="Clara Oswald">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Clara Oswald</span> nasceu em 23 de Novembro de 1989 em Lancashire, Inglaterra. Seu primeiro encontro com Doutor, ocorreu quando ainda uma criança, ao chutar uma bola acidentalmente em sua cabeça, em um parque. Clara sempre estava perdendo suas coisas: seu "melhor lápis", sua mochila, sua avó e o seu mojo, o qual ela conseguiu achar. Sempre que perdia algo, ela ia para um lugar tranquilo, fechava os olhos e imaginava onde poderia estar. Certa vez, ela encontrou o Doutor e o conselhou a em encontrar sua amiga (sem saber que ele estava falando dela). <a href="https://pt.wikipedia.org/wiki/Clara_Oswald" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=uYYeW_39KsbvzgLb37OQBg&q=Steven+Moffat&oq=Steven+Moffat&gs_l=psy-ab.12...0.0.0.2306.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.F5iyRZEd67s" target="_blank">jenna coleman</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=NokeW5CDII77zgKWhYHIBg&q=Steven+Moffat&oq=Steven+Moffat&gs_l=psy-ab.12...0.0.0.313.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.VEgU1AevOnA" class="actor" target="_blank">Steven Moffat</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerDW5.jpg" alt="River Song">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>River Song</span> foi concebida logo após ou na mesma noite de núpcias dos pais, a bordo da TARDIS do Doctor ao transitar pelo Vortex do Tempo. A mãe de Melody, Amy Pond, foi sequestrada durante ou logo após sua "Lua de mel" e substituída por um "ganger" (Cópia). Esta cópia funcionava como um avatar através do qual Amy via a realidade como se ela estivesse presente no lugar do Ganger. Na verdade, Amy tinha sido levada para uma igreja baseada no asteróide Demon's Run no Século 52 para dar continuidade a gestação de Melody. Através da combinação de algumas circunstâncias de sua concepção no vórtex do tempo, mais a interferência do Silêncio, Melody desenvolveu algumas características de Time Lord incluindo a regeneração. <a href="https://pt.wikipedia.org/wiki/River_Song" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=t4geW6ywNsn4zgKAmZ7IBQ&q=Alex+Kingston&oq=Alex+Kingston&gs_l=psy-ab.12...0.0.0.35013.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.sGn1gpVKXTw" target="_blank">Alex Kingston</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=NokeW5CDII77zgKWhYHIBg&q=Steven+Moffat&oq=Steven+Moffat&gs_l=psy-ab.12...0.0.0.313.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.VEgU1AevOnA" class="actor" target="_blank">Steven Moffat</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="margin-bottom: 8%;" class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BZzwiQjwam0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <!-- botoes voltar/topo -->
+                <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
+
+                <!--fim div pricipal-->
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#" />&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+</body>
+
+</html>

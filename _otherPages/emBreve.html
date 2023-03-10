@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>- Recomendados </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/emCartaz.css">
+    <style>
+        h2 {
+            text-align: center;
+            font-weight: 800;
+            padding: 6%;
+        }
+
+        .sinopse {
+            font-size: 140%;
+            font-weight: 700;
+        }
+    </style>
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
+    <script>
+        check = 4;
+    </script>
+    <!--atribui um valor como id da pagina-->
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+
+                <!-- menu de navegação -->
+
+                <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                    <img style="padding-right: 2%" src="../_imagens/btn.png" id="turn-on">
+                    <div style="background-color: white;" class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <img class="img-fluid top" id="logoEmBreve" src="../_imagens/logoEmBreve.png" alt="logo Em cartaz" />
+
+                            <li><a href="../index.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoEmBreve')" />Home</li>
+                            <li><a href="series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logoEmBreve')" />Séries</li>
+                            <li><a href="emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logoEmBreve')" />Em Cartaz</li>
+                            <li><a href="recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logoEmBreve')" />Recomendados</li>
+                            <li><a href="noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logoEmBreve')" />Notícias</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!--cartazes-->
+                <div style="margin-top: 5%" class="row">
+                    <div style="padding: 0;" class="container-fluid">
+                        <img style="max-width: 100%" src="../_imagens/rolo-table.png">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_1.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_2.jpg" class="img-fluid" />
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_3.jpg" class="img-fluid">
+
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_4.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_5.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2">
+                                <img src="../_imagens/embreve_6.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <img style="max-width: 100%" src="../_imagens/rolo-table.png">
+                    </div>
+                </div>
+
+                <!--artigo filmes-->
+
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2 id="venom">Venom</h2>
+                                <img src="../_imagens/embreve-cv_1.jpg" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>Eddie Brock (Tom Hardy) é um jornalista que investiga o misterioso trabalho de um cientista, suspeito de utilizar cobaias humanas em experimentos mortais. Quando ele acaba entrando em contato com um simbionte alienígena, Eddie se torna Venom, uma máquina de matar incontrolável, que nem ele pode conter.</h5>
+
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ação/ Ficção Científica</td>
+                                                <td>115min</td>
+                                                <td>4.5</td>
+                                                <td>16 anos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y9PQon7wbpU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2>O rei leão (live action)</h2>
+                                <img src="../_imagens/embreve-cv_2.jpg" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Tudo corre bem, até que uma grande tragédia atinge sua vida mudando sua trajetória para sempre. A sinopse oficial ainda não foi divulgada.</h5>
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aventura, Família</td>
+                                                <td>110min</td>
+                                                <td>4</td>
+                                                <td>Não definido</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/pY9P04JhdFk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2 id="xmen"> X-Men: Fênix Negra</h2>
+                                <img src="../_imagens/embreve-cv_3.jpg" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>Nova aventura dos X-Men, que relata a transformação de Jean Grey (Sophie Turner) na Fênix Negra, um ser cósmico de imenso poder.</h5>
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Ação, Ficção científica, Épico</td>
+                                                <td>120min</td>
+                                                <td>4</td>
+                                                <td>Não definido</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/f4S5xrQBwZA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2>Animais Fantásticos: Os Crimes de Grindelwald </h2>
+                                <img src="../_imagens/embreve-cv_4.jpg" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>Animais Fantásticos: Os Crimes de Grindelwald é a segunda de cinco novas aventuras no Mundo Bruxo de J.K. Rowling. No final do primeiro filme, o poderoso bruxo das trevas Gerardo Grindelwald (Johnny Depp) foi capturado pela MACUSA (Congresso Mágico dos Estados Unidos da América) com a ajuda de Newt Scamander (Eddie Redmayne). Mas, cumprindo sua ameaça, Grindelwald escapou da custódia e começou a reunir seguidores, a maioria desavisada de sua verdadeira intenção: criar magos de sangue puro para dominar todos os seres não-mágicos. Em um esforço para frustrar os planos de Grindelwald, Alvo Dumbledore (Jude Law) recruta seu ex-aluno Newt Scamander, que concorda em ajudar, desconhecendo os perigos que estão por vir. As linhas são desenhadas à medida que o amor e a lealdade são testados, mesmo entre os mais verdadeiros amigos e familiares, em um mundo bruxo cada vez mais dividido.</h5>
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Fantasia, Aventura</td>
+                                                <td>125min</td>
+                                                <td>0</td>
+                                                <td>Não definido</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/FCPH6mhGa7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2>AQUAMAN</h2>
+                                <img src="../_imagens/embreve-cv_5.jpg" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>Filme solo do super-herói atlante Aquaman (Jason Momoa), o Rei dos Setes Mares.</h5>
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ação/ Ficção Científica</td>
+                                                <td>110min</td>
+                                                <td>0</td>
+                                                <td>Não definido</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/hHh5Rs--DAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="row">
+                    <div class="container">
+                        <div style="margin: 1% 1%;" class="row">
+                            <div id="em-breve" class="col-12">
+                                <h2>ROBIN HOOD - A ORIGEM</h2>
+                                <img src="../_imagens/embreve-cv_6.png" class="img-fluid">
+                            </div>
+                            <div id="box-em-breve" class="col-12">
+                                <h1 class="sinopse">SINOPSE</h1>
+                                <h5>A origem da famosa lenda sobre o ladrão que rouba dos ricos para dar aos pobres. Robin Hood (Taron Egerton) volta das Cruzadas e surpreende-se ao encontrar a Floresta Sherwood infestada de criminosos, no mais completo caos. Ele não deixará que as coisas permaneçam desse jeito.</h5>
+                                <div class="table-responsive">
+                                    <table id="tabela" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td class="table-dark">Gênero</td>
+                                                <td class="table-dark">Duração</td>
+                                                <td class="table-dark">Nota</td>
+                                                <td class="table-dark">Classificação Indicativa</td>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ação/ Ficção Científica</td>
+                                                <td>Não definido</td>
+                                                <td>4</td>
+                                                <td>Não definido</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- trailer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/3L77LFfyqCg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+
+                                <hr style="height: 2px; background-color: darkred; margin-top: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#" />&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!------>
+
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+</body>
+
+</html>

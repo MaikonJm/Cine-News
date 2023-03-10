@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/emCartaz.css" />
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
+    <script>
+        check = 2;
+    </script>
+    <!--atribui um valor como id da pagina-->
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+
+                <!-- menu de navegação -->
+
+                <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                    <img style="padding-right: 2%" src="../_imagens/btn.png" id="turn-on">
+                    <div style="background-color: white;" class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <img class="img-fluid top" id="logoEmCartaz" src="../_imagens/logoEmCartaz.png" alt="logo Em cartaz" />
+
+                            <li><a href="../index.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoEmCartaz')" />Home</li>
+                            <li><a href="series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logoEmCartaz')" />Séries</li>
+                            <li><a href="emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logoEmCartaz')" />Em breve</li>
+                            <li><a href="recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logoEmCartaz')" />Recomendados</li>
+                            <li><a href="noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logoEmCartaz')" />Notícias</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <!--Artigos filmes-->
+                <article class="filme1">
+                    <h1 style="margin-top: 8%; font-weight: 800; font-size: 200%"><i class="fas fa-film fa-1x"></i> Em Cartaz <i class="fas fa-film fa-1x"></i></h1>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/jurassic_world2Cover.png" alt="Capa Jurrasic World 2" title="Jurassic World 2">
+                            </div>
+
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Jurassic World 2: Reino Ameaçado</strong><br><sub>"Jurassic World 2: Fallen Kingdom"</sub></h1>
+                                        <p class="lead">Com todas as maravilhosas aventuras e emoções de uma das franquias mais populares e bem sucedidas da história do cinema, esse novo evento cinematográfico mostra o retorno dos personagens e dinossauros favoritos do público – além de novas espécies, mais espetaculares e aterrorizantes do que nunca.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ação/ Ficção Científica</td>
+                                <td>115min</td>
+                                <td>4.5</td>
+                                <td>16 anos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/jurassic1.jpg" alt="First slide">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xmAK-UQ_7rQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/incriveis2Cover.jpg" alt="Capa Os Incríveis 2" title="Os Incríveis 2">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Os Incríveis 2</strong><br><sub>"The Incredibles 2"</sub></h1>
+                                        <p class="lead">Quando Helena Pêra é chamada para voltar a lutar contra o crime como a super-heroína Mulher-Elástica, cabe ao seu marido, Roberto, a tarefa de cuidar das crianças, especialmente o bebê Zezé. O que ele não esperava era que o caçula da família também tivesse superpoderes, que surgem sem qualquer controle</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Animação</td>
+                                <td>125min</td>
+                                <td>4.0</td>
+                                <td>Livre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/The-Incredibles-2.jpg">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WUATti1ZAHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/banner_transilvania.jpg" alt="Deadpool 2" title="Deadpool 2">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Deadpool 2</strong><br><sub>"Deadpool 2"</sub></h1>
+                                        <p class="lead">Quando o super soldado Cable (Josh Brolin) chega em uma missão para assassinar o jovem mutante Russel (Julian Dennison), o mercenário Deadpool (Ryan Reynolds) precisa aprender o que é ser herói de verdade para salvá-lo. Para isso, ele recruta seu velho amigo Colossus e forma o novo grupo X-Force, sempre com o apoio do fiel escudeiro Dopinder (Karan Soni).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ação/Comédia/Aventura</td>
+                                <td>120min</td>
+                                <td>4.3</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/hotel.jpg">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1P9OzWX6nzE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/antman.jpg" alt="Oito Mulheres e um Segredo" title="Oito Mulheres e um Segredo">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Oito Mulheres e um Segredo</strong><br><sub>"Ocean's 8"</sub></h1>
+                                        <p class="lead">Recém-saída da prisão, Debbie Ocean (Sandra Bullock) logo procura sua ex-parceira Lou (Cate Blanchett) para realizar um elaborado assalto: roubar um colar de diamantes no valor de US$ 150 milhões, que a Cartier mantém sempre em um cofre. O plano é convencer a empresa a emprestá-lo para que a estrela Daphne Kluger (Anne Hathaway) use a joia no badalado Met Gala, um dos eventos mais chiques e vistosos de Nova York. Para tanto, Debbie e Lou reúnem uma equipe composta apenas por mulheres: Nine Ball (Rihanna), Amita (Mindy Kaling), Constance (Awkwafina), Rose (Helena Bonham Carter) e Tammy (Sarah Paulson).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Comédia/Policial</td>
+                                <td>110min</td>
+                                <td>3.8</td>
+                                <td>14 anos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/antman2.jpg" alt="First slide">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ItMzVb1K6Wk?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/missaoimpossivel.jpg" alt="Eu só posso imaginar" title="Eu só posso imaginar">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Eu só posso imaginar</strong><br><sub>"I can only imagine"</sub></h1>
+                                        <p class="lead">Bart Millard (J. Michael Finley) é o vocalista da banda cristã MercyMe e tem um relacionamento conturbado com seu pai, que sempre o tratou de maneira dura e nunca entendeu seu amor pela música. Conseguindo forças através de Deus, Bart resolve então eternizar sua relação em uma canção, "I Can Only Imagine".</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Drama/Biografia</td>
+                                <td>110min</td>
+                                <td>3.9</td>
+                                <td>12 anos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/missaoimpbanner.jpg" alt="Missão Impossível: Efeito Fallout">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XW14G08ggJ8?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/thenun.jpg" alt="No olho do furacão" title="No olho do furacão">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>No olho do furacão</strong><br><sub>"The Hurricane Heist"</sub></h1>
+                                        <p class="lead">Em 'No Olho do Furacão', sob a ameaça de um furacão, criminosos oportunistas se infiltram em uma instalação de Mint dos EUA para roubar US$ 600 milhões. Até que o furacão se transforma em uma tempestade letal de CATEGORIA 5 e seus planos vão por água abaixo. Eles precisam de um código secreto do cofre, conhecido apenas por uma Agente do Tesouro (Maggie Grace).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ação</td>
+                                <td>102min</td>
+                                <td>3.0</td>
+                                <td>14 anos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/thenun2.jpg" alt="No olho do furacão">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xUsRQjpACFw?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <article class="filme1">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="banner-img" class="col-12 col-md-6 col-lg-4">
+                                <img align="center" class="img-fluid cover" src="../_imagens/mammamia.jpg" alt="Mamma Mia! Lá vamos nós denovo" title="Mamma Mia! Lá vamos nós denovo">
+                            </div>
+
+                            <div id="banner-img" style="" class="col-12 col-md-6 col-lg-8">
+                                <div id="sinopse" class="jumbotron">
+                                    <div class="container">
+                                        <h1 class="display-4"><strong>Mamma Mia! Lá vamos nós denovo</strong><br><sub>"Mamma Mia! Here we go again"</sub></h1>
+                                        <p class="lead">Ao descobrir que está grávida, Sophie (Amanda Seyfried) busca inspiração para a maternidade lembrando do passado da mãe. Nos anos 70 a jovem Donna (Lily James) viveu muitas aventuras com seu grupo musical "Donna e The Dynamo", parceria com as amigas Tanya (Jessica Keenan Wynn) e Rosie (Alexa Davies). Porém, mais do que isso, ela se apaixonou e viveu relacionamentos intensos com três homens bem diferentes: Harry (Hugh Skinner), Sam (Jeremy Irvine) e Bill (Josh Dylan).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="table-responsive">
+                    <table id="tabela" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class="table-dark">Gênero</td>
+                                <td class="table-dark">Duração</td>
+                                <td class="table-dark">Nota</td>
+                                <td class="table-dark">Classificação Indicativa</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Comédia</td>
+                                <td>95min</td>
+                                <td>3.9</td>
+                                <td>Livre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="division">
+
+
+                <img class="img-fluid" src="../_imagens/mammamia2.jpg" alt="Mamma Mia! Lá vamos nós denovo">
+
+
+
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YClcvscKf3w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+                <hr class="division">
+
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#" />&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+    <!------>
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+</body>
+
+</html>

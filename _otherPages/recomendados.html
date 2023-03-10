@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - Recomendados </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/recomendados.css">
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
+    <script>
+        //atribui um valor como id da pagina-->
+        check = 5;
+    </script>
+    
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+    
+    <style>
+        .division {
+            background-color: darkred;
+            height: 1px;
+            width: 10%;
+            border-style: dotted;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+
+            <!-- div centralizar conteudo -->
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <!-- div centralizar conteudo -->
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+
+                <!-- menu de navegação -->
+
+                <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                    <img class="img-fluid" style="padding-right: 2%;" src="../_imagens/btn.png" id="turn-on">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <img class="img-fluid top" id="logoRecomend" src="../_imagens/logoRecomend.png" alt="logo Recomendados" />
+
+                            <li><a href="../index.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoRecomend')" />Home</li>
+                            <li><a href="emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logoSeries')" />Em cartaz</li>
+                            <li><a href="emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logoRecomend')" />Em breve</li>
+                            <li><a href="series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logoRecomend')" />Series</li>
+                            <li><a href="noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logoRecomend')" />Notícias</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div style="padding-top: 30px;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div align="center" class="carousel-inner">
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_fg.jpg" alt="Forrest Gump">
+                                <figcaption>
+                                    <h2>Forrest Gump: O Contador de Histórias</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>1994</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item active">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_lotr.jpg" alt="O senhor dos aneis">
+                                <figcaption>
+                                    <h2>Senhor dos Anéis: O Retorno do Rei</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2003</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_gld.jpg" alt="Gladiador">
+                                <figcaption>
+                                    <h2>Gladiador</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2000</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_btm.jpg" alt="batman o cavaleiro das trevas">
+                                <figcaption>
+                                    <h2>Batman: O cavaleiro das trevas</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2008</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_rsryan.jpg" alt="O Resgate do Soldado Ryan">
+                                <figcaption>
+                                    <h2>O Resgate do Soldado Ryan</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>1998</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_cdd.jpg" alt="Cidade de Deus">
+                                <figcaption>
+                                    <h2>Cidade de Deus</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2002</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_rtt.jpg" alt="ratatouille">
+                                <figcaption>
+                                    <h2>Ratatouille</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2007</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_avng.jpg" alt="Vingadores: Guerra Infinita">
+                                <figcaption>
+                                    <h2>Vingadores: Guerra Infinita</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2018</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_pdmt.jpg" alt="Perdido em Marte">
+                                <figcaption>
+                                    <h2>Perdido em Marte</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2015</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_it.jpg" alt="It: A coisa">
+                                <figcaption>
+                                    <h2>It: A coisa</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2017</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_pflc.jpg" alt="À Procura da Felicidade">
+                                <figcaption>
+                                    <h2>À Procura da Felicidade</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2006</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure id="legenda">
+                                <img class="img-fluid" src="../_imagens/slide_pota.jpeg" alt="Planeta dos Macacos: A Origem">
+                                <figcaption>
+                                    <h2>Planeta dos Macacos: A Origem</h2>
+                                    <hr class="legenda" style="background-color: white; border: 2px;">
+                                    <h4>2011</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                </div>
+
+
+                <!-- fim carousel -->
+
+
+                <!--bloco A-->
+                <hr>
+                <div  class="container">
+                    <div id="box-content" class="row">
+                        <div  class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/title_pdmt.jpg" alt="perdido em marte" class="img-fluid">
+                        </div>
+                        <div  class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">Perdido em Marte</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">O astronauta Mark Watney (Matt Damon) é enviado a uma missão em Marte. Após uma severa tempestade ele é dado como morto, abandonado pelos colegas e acorda sozinho no misterioso planeta com escassos suprimentos, sem saber como reencontrar os companheiros ou retornar à Terra.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=tCAgtzMUCaA" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 01/10/2015</p>
+                            <p><b>Título original:</b> The Martian</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">IT - A COISA</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Um grupo de sete adolescentes de Derry, uma cidade no Maine, formam o auto-intitulado "Losers Club" - o clube dos perdedores. A pacata rotina da cidade é abalada quando crianças começam a desaparecer e tudo o que pode ser encontrado delas são partes de seus corpos. Logo, os integrantes do "Losers Club" acabam ficando face a face com o responsável pelos crimes: o palhaço Pennywise.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/UllUiLEXB_g" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 07/09/2017</p>
+                            <p><b>Título original:</b> It</p>
+                        </div>
+                        <div  class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_it.jpg" alt="ITacoisa" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+                <!--bloco A-->
+                <hr class="division">
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_pflc.jpg" alt="perdido em marte" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">À PROCURA DA FELICIDADE</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Chris Gardner (Will Smith) é um pai de família que enfrenta sérios problemas financeiros. Apesar de todas as tentativas em manter a família unida, Linda (Thandie Newton), sua esposa, decide partir. Chris agora é pai solteiro e precisa cuidar de Christopher (Jaden Smith), seu filho de apenas 5 anos. Ele tenta usar sua habilidade como vendedor para conseguir um emprego melhor, que lhe dê um salário mais digno. Chris consegue uma vaga de estagiário numa importante corretora de ações, mas não recebe salário pelos serviços prestados. Sua esperança é que, ao fim do programa de estágio, ele seja contratado e assim tenha um futuro promissor na empresa. Porém seus problemas financeiros não podem esperar que isto aconteça, o que faz com que sejam despejados. Chris e Christopher passam a dormir em abrigos, estações de trem, banheiros e onde quer que consigam um refúgio à noite, mantendo a esperança de que dias melhores virão.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/6yc069E1gfc" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 02/02/2006</p>
+                            <p><b>Título original:</b> The Pursuit of Happyness</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">PLANETA DOS MACACOS - A ORIGEM</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">San Francisco. Will Rodman (James Franco) é um cientista que trabalha em um laboratório onde são realizadas experiências com macacos. Ele está interessado em descobrir novos medicamentos para a cura do mal de Alzheimer, já que seu pai, Charles (John Lithgow), sofre da doença. Após um dos macacos escapar e provocar vários estragos, sua pesquisa é cancelada. Will não desiste e leva para casa algumas amostras do medicamento, aplicando-as no próprio pai, e também um filhote de macaco de uma das cobaias do laboratório. Logo Charles não apenas se recupera como tem a memória melhorada, graças ao medicamento. Já o filhote, que recebe o nome de César, demonstra ter inteligência fora do comum, já que recebeu geneticamente os medicamentos aplicados na mãe. O trio leva uma vida tranquila, até que, anos mais tarde, o remédio para de funcionar em Charles e, em uma tentativa de defendê-lo, César ataca um vizinho. O macaco é então engaiolado, onde passa a ter contato com outros símios e, cada vez mais, se revolta com a situação.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/y9xNtz44y0E" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 26/08/2011</p>
+                            <p><b>Título original:</b> Rise of the Planet of the Apes</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_pota.jpeg" alt="Planeta dos Macacos - A Origem" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+                <!--bloco A-->
+                <hr class="division">
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/title_frstgmp.jpg" alt="FORREST GUMP" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">FORREST GUMP - O CONTADOR DE HISTÓRIAS</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Quarenta anos da história dos Estados Unidos, vistos pelos olhos de Forrest Gump (Tom Hanks), um rapaz com QI abaixo da média e boas intenções. Por obra do acaso, ele consegue participar de momentos cruciais, como a Guerra do Vietnã e Watergate, mas continua pensando no seu amor de infância, Jenny Curran.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/DRc7JrORPas" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 07/12/1994</p>
+                            <p><b>Título original:</b> Forrest Gump</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">O SENHOR DOS ANÉIS - O RETORNO DO REI</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf (Ian McKellen) e Pippin (Billy Boyd) partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden (Bernard Hill) em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso Frodo (Elijah Wood), Sam (Sean Astin) e Gollum (Andy Serkins) seguem sua viagem rumo à Montanha da Perdição, para destruir o Um Anel.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/Q9wZCGjBxyU" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 25/12/2003</p>
+                            <p><b>Título original:</b> The Lord of the Rings: The Return of the King</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_lotr.jpg" alt="O SENHOR DOS ANÉIS - O RETORNO DO REI" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+                <!--bloco A-->
+                <hr class="division">
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_gld.jpg" alt="GLADIADOR" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">GLADIADOR</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Nos dias finais do reinado de Marcus Aurelius (Richard Harris), o imperador desperta a ira de seu filho Commodus (Joaquin Phoenix) ao tornar pública sua predileção em deixar o trono para Maximus (Russell Crowe), o comandante do exército romano. Sedento pelo poder, Commodus mata seu pai, assume a coroa e ordena a morte de Maximus, que consegue fugir antes de ser pego e passa a se esconder sob a identidade de um escravo e gladiador do Império Romano.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/ol67qo3WhJk" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 19/05/2000</p>
+                            <p><b>Título original:</b> Gladiator</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">BATMAN - O CAVALEIRO DAS TREVAS</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Após dois anos desde o surgimento do Batman (Christian Bale), os criminosos de Gotham City têm muito o que temer. Com a ajuda do tenente James Gordon (Gary Oldman) e do promotor público Harvey Dent (Aaron Eckhart), Batman luta contra o crime organizado. Acuados com o combate, os chefes do crime aceitam a proposta feita pelo Coringa (Heath Ledger) e o contratam para combater o Homem-Morcego.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/4ghh4tgxck0" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 18/07/2008</p>
+                            <p><b>Título original:</b> The Dark Knight</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_btm.jpg" alt="BATMAN - O CAVALEIRO DAS TREVAS" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+                <!--bloco A-->
+                <hr class="division">
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_rsryan.jpg" alt="O RESGATE DO SOLDADO RYAN" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">O RESGATE DO SOLDADO RYAN</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Ao desembarcar na Normandia, no dia 6 de junho de 1944, capitão Miller (Tom Hanks) recebe a missão de comandar um grupo do segundo batalhão para o resgate do soldado James Ryan, caçula de quatro irmãos, dentre os quais três morreram em combate. Por ordens do chefe George C. Marshall, eles precisam procurar o soldado e garantir o seu retorno, com vida, para casa.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/yiyjRA7X2hg" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 05/05/1999</p>
+                            <p><b>Título original:</b> Saving Private Ryan</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">CIDADE DE DEUS</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Buscapé (Alexandre Rodrigues) é um jovem pobre, negro e muito sensível, que cresce em um universo de muita violência. Buscapé vive na Cidade de Deus, favela carioca conhecida por ser um dos locais mais violentos da cidade. Amedrontado com a possibilidade de se tornar um bandido, Buscapé acaba sendo salvo de seu destino por causa de seu talento como fotógrafo, o qual permite que siga carreira na profissão. É através de seu olhar atrás da câmera que Buscapé analisa o dia-a-dia da favela onde vive, onde a violência aparenta ser infinita.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/tDt1O9MIA3M" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 30/08/2002</p>
+                            <p><b>Título original:</b> Cidade de Deus</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_cdd.jpg" alt="CIDADE DE DEUS" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+                <!--bloco A-->
+                <hr class="division">
+                <div class="container">
+                    <div id="box-content" class="row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_rtt.jpg" alt="RATATOUILLE" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">RATATOUILLE</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Paris. Remy (Patton Oswalt) é um rato que sonha se tornar um grande chef. Só que sua família é contra a idéia, além do fato de que, por ser um rato, ele sempre é expulso das cozinhas que visita. Um dia, enquanto estava nos esgotos, ele fica bem embaixo do famoso restaurante de seu herói culinário, Auguste Gusteau (Brad Garrett). Ele decide visitar a cozinha do lugar e lá conhece Linguini (Lou Romano), um atrapalhado ajudante que não sabe cozinhar e precisa manter o emprego a qualquer custo. Remy e Linguini realizam uma parceria, em que Remy fica escondido sob o chapéu de Linguini e indica o que ele deve fazer ao cozinhar.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/watch?v=iryIGZlE5B4" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 06/07/2007</p>
+                            <p><b>Título original:</b> Ratatouille</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="division">
+                <!--bloco B-->
+                <div class="container">
+                    <div style="margin-bottom: 8%;" id="box-content" class="row">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <h1 style="font-size: 200%;">VINGADORES: GUERRA INFINITA</h1>
+                            <h3>Sinopse:</h3>
+                            <p id="description" style="overflow: hidden">Thanos (Josh Brolin) enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre alguns de seus integrantes.</p>
+                            <button type="button" class="btn btn-info"><a style="text-decoration: none; color: white;" href="https://www.youtube.com/embed/t_ULBP6V9bg" target="_blank">Trailer</a></button>
+                            <p style="margin-top: 4%;"><b>Lançamento:</b> 26/04/2018</p>
+                            <p><b>Título original:</b> Avengers: Infinity War</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <img id="title-rec" src="../_imagens/slide_avng.jpg" alt="VINGADORES: GUERRA INFINITA" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!--end AB-->
+
+
+
+
+
+                <footer id="rodape">
+                    <nav>
+
+                        <ul align="center">
+                            <li><a href="https://facebook.com" />&copy;CineNews</li>
+                            <li><a href="https://facebook.com" />Facebook</li>
+                            <li><a href="https://facebook.com" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+
+                </footer>
+            </div>
+
+            <!-- div centralizar conteudo -->
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------>
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine News - Séries </title>
+    <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
+    <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
+    <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
+    <!--resfresh-->
+    <meta http-equiv="refresh" content="320" />
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/series.css" />
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../_css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_css/style.css" rel="stylesheet">
+    <!--icones fontawelsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="../_javascript/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+    <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
+    <script>
+        // função toggle entre divs 
+
+        $(document).ready(function() {
+
+            $(".btn-ww").click(function() {
+                $(".ww").toggle();
+            });
+
+        });
+    </script>
+    <style>
+        .btn-ww {
+            background-color: darksalmon;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row inicio">
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
+                <img style="float: right; margin-top: 10px;" src="../_imagens/btn.png" id="turn-on">
+                <h1 class="cabecalho" style="font-family: breakingbad; font-size: 500%;">Breaking Bad</h1>
+
+                <audio audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
+                    <source src="../_audio/BreakingBad.mp3" type="audio/mp3" />
+                        seu navegador não suporta HTML5
+                </audio>
+
+                <img id="off" style="float: left;" src="../_imagens/icon_sound.png">
+
+                <img class="img-fluid" src="../_imagens/banner_breakingbad.jpg" alt="breaking bad">
+                <div class="series">
+
+                    <p>Walter White (Bryan Cranston) é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler (Anna Gunn), sua esposa grávida, e Walt Junior (RJ Mitte), seu filho deficiente físico, ele tem que trabalhar duplamente. Sua vida fica ainda mais complicada quando descobre que está sofrendo de um câncer de pulmão incurável. Para aumentar rapidamente a quantidade de dinheiro que deixaria para sua família após sua morte, Walter usa seu conhecimento de química para fazer e vender metanfetamina, uma droga sintética. Ele conta com a ajuda do ex-aluno e pequeno traficante Jesse (Aaron Paul) e enfrenta vários desafios, incluindo o fato de seu concunhado ser um importante nome dentro da Agência Anti-Drogas da região..</p>
+                    <small>Noticia adptada de - <a href="http://www.adorocinema.com">adorocinema.com</a></small>
+                </div>
+
+                <!-- tabela -->
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table id="tabela" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="table-dark"><i class="fas fa-couch"></i>&nbsp;&nbsp;&nbsp;Temporadas</td>
+                                    <td class="table-dark"><i class="far fa-star"></i>&nbsp;&nbsp;&nbsp;Nota</td>
+                                    <td class="table-dark"><i class="fas fa-th-list"></i>&nbsp;&nbsp;&nbsp;Gênero</td>
+                                    <td class="table-dark"><i class="far fa-play-circle"></i>&nbsp;&nbsp;&nbsp;Episódios</td>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>9.5</td>
+                                    <td>Drama</td>
+                                    <td>62</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <hr class="linha">
+
+                <!-- personagens -->
+
+
+                <h1 class="titulo-per" style="font-family: breakingBad; font-size: 380%">Principais Personagens</h1>
+
+                <hr class="linha">
+
+
+                <!-- div primeiro personagem -->
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container ww">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img id="person" class="walterwhite" src="../_imagens/PerBB1-1.jpg" alt="Walter White">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Walter White</span> já foi um químico promissor e um dos fundadores da bilionária empresa Gray Matter Technologies, porém logo saiu dela, vendendo suas partes nas ações por cinco mil dólares por razões pessoais, tornando-se um professor de química infeliz e desiludido. Após ser diagnosticado com câncer pulmonar nível 3, resolve fabricar metanfetamina para garantir a segurança financeira de sua família após sua morte. <a href="https://pt.wikipedia.org/wiki/Walter_White_(Breaking_Bad)" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?q=Vince+Gilligan&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK0qLMyrVAKzjSstk5MrtYyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwAHkRxRTgAAAA&sa=X&ved=0ahUKEwiqobWB5rrbAhUKkpAKHZV5BLMQmxMI4wEoATAZ&biw=1242&bih=557" class="actor" target="_blank">Vince Gilligan</a><br>
+                                <button title="alternar personagem" class="btn-ww"><i class="fas fa-exchange-alt"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div troca personagem -->
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset; display: none;" class="container ww">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img id="person" class="walterwhite" src="../_imagens/PerBB1.jpg" alt="Walter White">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Heisenberg</span> ...pseudônimo que Walter usou para trabalhar no tráfico de metanfetamina, foi usado pela primeira vez em suas negociações com Tuco, um traficante local, este apelido é uma homenagem a <i>Werner Heisenberg</i> que criou o princípio da incerteza, que estabelece que seja impossível determinar simultaneamente a posição e a velocidade de um elétron ou qualquer outra partícula com certeza.<br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?q=Vince+Gilligan&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK0qLMyrVAKzjSstk5MrtYyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwAHkRxRTgAAAA&sa=X&ved=0ahUKEwiqobWB5rrbAhUKkpAKHZV5BLMQmxMI4wEoATAZ&biw=1242&bih=557" class="actor" target="_blank">Vince Gilligan</a><br>
+                                <button class="btn-ww" title="alternar personagem"><i class="fas fa-exchange-alt"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB2.jpg" alt="Jesse Pinkman">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Jesse Pinkman</span> nasceu em 21 de setembro de 1984 em uma família de classe média alta em Albuquerque, no Novo México . No momento em que a série começa, ele tem sido distanciado de seus pais por causa de seu abuso de drogas e estilo de vida como traficante de drogas. <a href="https://pt.wikipedia.org/wiki/Jesse_Pinkman" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?q=Aaron+Paul&oq=Aaron+Paul&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8" target="_blank">Aaron Paul</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB3.jpg" alt="Skyler" alt="Skyler White">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Skyler White</span> teve várias escassas fontes de receita: trabalhando como contadora para a firma Beneke Fabricators, de Albuquerque , escrevendo contos e vendendo itens no eBay . <a href="https://en.wikipedia.org/wiki/Skyler_White" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=juodW8vbNoH8wQTRkoO4Dw&q=Anna+Gunn&oq=Anna+Gunn&gs_l=psy-ab.12...0.0.0.3720.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.C3AzLKRInoA" target="_blank">Anna Gunn</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=2-odW6OxEor4wATV_ofADA&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.12889.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.BsZbGPMw3Bc" class="actor" target="_blank">Vince Gilligan</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB4.jpg" alt="Hank Schrader">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Hank Schrader</span> é um agente especial da DEA , onde ele subiu nas hierarquias para se tornar o supervisor de todas as investigações conduzidas por seu escritório em Albuquerque , sob o olhar atento do ASAC George Merkert e SAC Ramey. <a href="https://en.wikipedia.org/wiki/Hank_Schrader" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?q=Dean+Norris&stick=H4sIAAAAAAAAAONQFuLUz9U3ME3Ly7FU4gIxTXJSMgorTjEixE8xgiWMc5PLC41hnLzCwjIDGKfSMjm5EspB0W-Ua2mUAZUwrSortyyBaSnMMk9P-8WoEZSak1iSmqJQkq_gVFSZmKfgXJSYV1ySn6eQmJei4JhYBGQFJJbm7GJBOGgXC5IZAI6jgx7DAAAA&npsic=0&sa=X&ved=0ahUKEwic6cyl0srbAhUBfpAKHVHJAPcQ-BYIMQ" target="_blank">Dean Norris</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB5.jpg" alt="Marie Schrader">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Marie Schrader</span> é a irmã de Skyler White , esposa do agente da DEA Hank Schrader e cunhada de Walter White . Marie está perto de sua irmã, embora sua tendência a forçar invariavelmente irrita Skyler. <a href="http://breakingbad.wikia.com/wiki/Marie_Schrader" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=8O0dW7a0Ocy-wASU_avIAw&q=Betsy+Brandt&oq=Betsy+Brandt&gs_l=psy-ab.12...0.0.0.5521.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.DeDv8NOquvc" target="_blank">Maisie Williams</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB6.jpg" alt="Walter White Jr" src="../_imagens/PerGot5.jpg" alt="Sansa Stark">
+                        </div>
+
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Walter White Jr</span> é o filho de Walter White, tem 16 anos no inicio da série e tem paralisia cerebral, o que o faz falar de forma estranha e usar muletas por toda a série. Não são ditos grandes fatos sobre a infância ou a primeira metade da sua adolescência. <a href="https://pt.wikipedia.org/wiki/Jon_Snow" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?q=RJ+Mitte&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK2sNCoyUQKzjfMKC8sMtEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqAbyNj2RQAAAA&sa=X&ved=0ahUKEwiIpraY18rbAhUPl5AKHWNbAM0QmxMIyQEoATAT&biw=1920&bih=974" target="_blank">RJ Mitte</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB7.jpg" alt="Saul Goodman">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Saul Goodman</span> é um advogado e pode ser facilmente encontrado nas paginas amarelas de Albuquerque. Durante a série, ele é o advogado e cumplice de Walter White e Jesse Pinkman. Seu nome é um jogo de palavras para melhor atrair clientes: "'S'all good, man!" ("Tá tudo bem, cara") vira "Saul Goodman". <a href="https://pt.wikipedia.org/wiki/Saul_Goodman" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?q=Bob+Odenkirk&stick=H4sIAAAAAAAAAOPgE-LSz9U3SEu2KLdMUeIEsY1yLY0ytEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqAQagkNJPAAAA&sa=X&ved=0ahUKEwjCsrmR2MrbAhWCj5AKHe54A-0QmxMI9wEoATAU&biw=1920&bih=974" target="_blank">Bob Odenkirk</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" src="../_imagens/PerBB8.jpg" alt="Mike">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Mike</span> por quase três décadas de polícial no bairro em Filadélfia, teve que lidar diariamente com situações como violência doméstica, roubo e disputas domésticas. O recinto onde ele trabalhava estava cheio de policiais corruptos que ficaram com o dinheiro preto, incluindo o próprio Mike. <a href="https://pt.wikipedia.org/wiki/Mike_Ehrmantraut" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor" href="https://www.google.com.br/search?q=Jonathan+Banks&stick=H4sIAAAAAAAAAOPgE-LWz9U3MDQqKU5OzlXiBHFM80oK0rVMspOt9NMyk0sy8_MSc-JL8zLLUouKU5GEkjMSixKTS1KLrApyEitTUxSSKgHlVSzEUAAAAA&sa=X&ved=0ahUKEwjm_tHa2MrbAhVITZAKHZYsCGYQmxMIvgEoATAV&biw=1920&bih=974" target="_blank">Jonathan Banks</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Trailer</h5>
+
+                <div style="margin-bottom: 8%;" class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ceqOTZnhgY8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <!-- botoes voltar/topo -->
+                <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
+                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
+
+                <!--fim div pricipal-->
+
+                <footer id="rodape">
+                    <nav>
+                        <ul align="center">
+                            <li><a href="#" />&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+
+
+            <div class="col-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+    <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
+</body>
+
+</html>
