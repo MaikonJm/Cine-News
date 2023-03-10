@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* imagem capa pequena*/
+
+.filme1 img.cover {
+    padding-left: 5%;
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+
+}
+
+
+/* topo de cada banner com a sinopse*/
+
+#banner-img {
+    margin-top: 8%;
+    padding-bottom: 15px;
+
+
+}
+
+#sinopse {
+    padding: 0;
+    height: auto;
+}
+
+.lead {
+    padding-top: 2%;
+    z-index: 0;
+}
+
+
+.filme1 h1 {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+
+}
+
+.filme1 h2 {
+    font-size: 180%;
+    padding-left: 23%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+
+.filme1 p {
+    text-align: justify;
+    height: auto;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+/*tabela*/
+
+#tabela {}
+
+
+
+caption {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 5px 30%;
+    background-color: #ECECEC;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+tr,
+td,
+th {
+    border: thin solid #ccc;
+    border-bottom: none;
+    border-right: none;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+
+thead th {
+    text-align: center;
+    background-color: #E0E0E0;
+}
+
+thead tr th:first-child {
+    text-align: left;
+}
+
+
+
+article {
+    padding-bottom: 10px;
+    margin-bottom: 10%;
+}
+
+iframe {
+    padding-top: 5%;
+    width: 750px;
+    height: 380px;
+}
+
+
+sub {
+    font-size: 65%;
+
+
+}
+
+/* linhas separação*/
+
+hr {
+    width: 70%;
+    color: #f00;
+    background-color: #f00;
+    height: 10px;
+}
+
+/*emCartaz*/
+
+h1{
+    text-align: center;
+}
+
+#em-breve{
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+#box-em-breve .table-responsive{
+    margin-top: 8%;
+}
+
+

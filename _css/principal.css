@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*Importação de fontes*/
+
+@font-face {
+    font-family: filme;
+    src: url("../_fonts/filme.otf");
+}
+
+@font-face {
+    font-family: fakenews;
+    src: url("../_fonts/fakenews.otf");
+}
+
+@font-face {
+    font-family: Ceviche One, cursive;
+    src: url('https://fonts.googleapis.com/css?family=Ceviche+One');
+}
+
+@font-face {
+    font-family: Sriracha, cursive;
+    src: url('https://fonts.googleapis.com/css?family=Sriracha');
+}
+
+@font-face {
+    font-family: Luckiest Guy;
+    src: url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+}
+
+@font-face {
+    font-family: EB Garamond, serif;
+    src: url('https://fonts.googleapis.com/css?family=EB+Garamond');
+}
+
+@font-face {
+    font-family: got;
+    src: url("../_fonts/got.ttf");
+}
+
+@font-face {
+    font-family: breakingbad;
+    src: url(../_fonts/breakingBad.otf)
+}
+
+@font-face {
+    font-family: narcos;
+    src: url(../_fonts/narcos.ttf)
+}
+
+@font-face {
+    font-family: doctor;
+    src: url(../_fonts/doctor.ttf)
+}
+
+@font-face {
+    font-family: thewalk;
+    src: url(../_fonts/deadwalking.otf)
+}
+
+
+
+/*Formatação body*/
+
+body {
+
+    background-image: url("../_imagens/back3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+
+
+/* Formatação interface - div principal */
+
+div#interface {
+
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+section#NoticiaLocadora h1 {
+    text-align: center;
+    color: black;
+
+
+}
+
+
+
+
+/*Formatação logotipo*/
+
+.top {
+
+    width: 28%;
+    height: auto;
+    margin-top: -80px;
+    padding-right: 2%;
+    z-index: 2;
+    position: relative;
+}
+
+#loading {
+
+    width: 600px;
+    height: 500px;
+    margin-bottom: -35%;
+    margin-left: 28%;
+    z-index: 3;
+    position: relative;
+    margin-top: 5%;
+}
+
+/*Formatação do menu*/
+
+#barra-navegacao {
+    width: auto;
+    padding: 0;
+    background-color: white;
+    /*cor da nav bar pequena*/
+}
+
+#menu {
+    display: block;
+    background-color: white;
+    margin-right: 0;
+}
+
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: -710%;
+    z-index: 10;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: rgba(195, 0, 0, 100);
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    box-shadow: 10px 10px 5px #999;
+    font-size: 90%;
+    border-radius: 5px;
+}
+
+#menu #none {
+    display: none;
+}
+
+#menu li:hover {
+    background-color: rgba(97, 7, 3, 100);
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: rgba(239, 224, 224, 100);
+}
+
+/* rodape */
+
+#rodape {
+    margin-bottom: -8%;
+}
+
+#rodape ul {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#rodape li {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgba(195, 0, 0, 100);
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    box-shadow: 10px 10px 5px #999;
+    font-size: 90%;
+
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    color: rgba(239, 224, 224, 100);
+}
+
+
+
+#turn-on2 {
+    cursor: pointer;
+    background-color: white;
+
+}
+
+#off {
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+#back-series {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+.inicio {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* btn topo */
+
+#topo {
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    left: 85%;
+    top: 90%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px;
+    background-color: white;
+    display: none;
+}
+
+#topo:hover{
+    background-color: grey;
+}
+
+
+

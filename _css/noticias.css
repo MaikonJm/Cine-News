@@ -1,0 +1,21 @@
+h1 {
+    padding-bottom: 8%;
+}
+
+#box-under {
+    margin-bottom: 8%;
+}
+
+#faixa {
+    height: 25px;
+    background-color: firebrick;
+    box-shadow: 0 0 8px #801515, 0 0 8px #801515;
+}
+
+hr{
+    margin-top: 6%;
+}
+
+p{
+
+}

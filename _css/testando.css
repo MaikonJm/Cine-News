@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: solid 10px #2c2c2c;
+}
+
+.slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#i1, i2, i3 {
+    display: none;
+}
+.pre, .next{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre {
+    left: 0;
+}
+
+.next {
+    right: 0;
+
+}
